@@ -27,6 +27,7 @@ export const FormContainer = styled.div`
   font-weight: bold;
   flex-wrap: wrap;
 `
+
 const BaseInput = styled.input`
   background: transparent;
   height: 2.5rem;
@@ -46,6 +47,7 @@ const BaseInput = styled.input`
     color: ${(props) => props.theme['gray-500']};
   }
 `
+
 export const TaskInput = styled(BaseInput)`
   flex: 1;
 
@@ -54,7 +56,7 @@ export const TaskInput = styled(BaseInput)`
   }
 `
 
-export const MinutosAmountInput = styled(BaseInput)`
+export const MinutesAmountInput = styled(BaseInput)`
   width: 4rem;
 `
 
@@ -70,7 +72,6 @@ export const CountdownContainer = styled.div`
   span {
     background: ${(props) => props.theme['gray-700']};
     padding: 2rem 1rem;
-
     border-radius: 8px;
   }
 `
@@ -84,7 +85,7 @@ export const Separator = styled.div`
   justify-content: center;
 `
 
-export const StarCountdownButton = styled.button`
+export const StartCountdownButton = styled.button`
   width: 100%;
   border: 0;
   padding: 1rem;
